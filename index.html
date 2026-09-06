@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0e4a2a">
+  <title>Samy's Halal Grill | Brooklyn, NY</title>
+  <meta name="description" content="Samy's Halal Grill in Brooklyn. Fresh, tasty, halal Mediterranean and Middle Eastern cuisine. Dine in, takeout and catering.">
+  <style>
+    :root{
+      --green:#0d4a2b;
+      --red:#9f1d1d;
+      --gold:#c48b2f;
+      --cream:#fbf3e4;
+      --ink:#2b2118;
+      --muted:#6e6258;
+      --white:#fff;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,Arial,Helvetica,sans-serif;
+      color:var(--ink);
+      background:#fffaf1;
+      line-height:1.5;
+    }
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1180px,92vw);margin:auto}
+    header{
+      position:sticky;top:0;z-index:20;
+      background:rgba(255,250,241,.96);
+      backdrop-filter:blur(10px);
+      border-bottom:1px solid #eadfcf;
+    }
+    nav{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:800;color:var(--green)}
+    .brand img{width:60px;height:60px;object-fit:cover;border-radius:50%;border:2px solid var(--gold)}
+    .links{display:flex;gap:24px;align-items:center;font-weight:700}
+    .call{background:var(--red);color:#fff;padding:11px 16px;border-radius:999px}
+    .hero{background:var(--cream);padding:28px 0 48px}
+    .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:34px;align-items:center}
+    .hero h1{font-size:clamp(2.6rem,6vw,5.7rem);line-height:.95;margin:0 0 18px;color:var(--green)}
+    .hero h1 span{display:block;color:var(--red);font-size:.55em;letter-spacing:.05em}
+    .hero p{font-size:1.15rem;color:var(--muted);max-width:650px}
+    .kicker{color:var(--gold);font-weight:900;letter-spacing:.14em;text-transform:uppercase}
+    .hero-art{border-radius:28px;overflow:hidden;box-shadow:0 24px 60px rgba(60,40,20,.18);border:5px solid #fff}
+    .actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .btn{padding:13px 18px;border-radius:12px;font-weight:800;border:2px solid var(--green)}
+    .btn.primary{background:var(--green);color:#fff}
+    .btn.secondary{background:#fff;color:var(--green)}
+    section{padding:72px 0}
+    .section-title{text-align:center;margin-bottom:34px}
+    .section-title h2{font-size:clamp(2rem,4vw,3.3rem);color:var(--green);margin:0}
+    .section-title p{color:var(--muted);margin:8px auto 0;max-width:700px}
+    .highlights{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{background:#fff;border:1px solid #eadfcf;border-radius:18px;padding:22px;box-shadow:0 12px 28px rgba(55,40,20,.07)}
+    .card h3{margin:5px 0;color:var(--red)}
+    .menu-preview{background:var(--green);color:white}
+    .menu-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:30px;align-items:center}
+    .menu-wrap h2{font-size:clamp(2.2rem,4vw,4rem);margin:.2em 0}
+    .menu-wrap p{color:#dfe9e2}
+    .menu-image{background:white;border-radius:20px;padding:10px}
+    .food-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .food-grid .dish{background:#fff;border-radius:18px;overflow:hidden;border:1px solid #eadfcf}
+    .dish img{width:100%;height:190px;object-fit:cover}
+    .dish div{padding:15px}
+    .dish strong{color:var(--green);display:block;font-size:1.05rem}
+    .info{background:var(--cream)}
+    .info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+    .info-card{background:white;border-radius:20px;padding:28px;border-top:5px solid var(--gold)}
+    .info-card h3{color:var(--green);margin-top:0}
+    footer{background:#082f1d;color:#fff;padding:34px 0}
+    .footer-grid{display:flex;justify-content:space-between;gap:30px;align-items:center;flex-wrap:wrap}
+    .small{color:#c9d9cf;font-size:.94rem}
+    @media(max-width:900px){
+      .hero-grid,.menu-wrap{grid-template-columns:1fr}
+      .highlights,.food-grid{grid-template-columns:repeat(2,1fr)}
+      .info-grid{grid-template-columns:1fr}
+      .links{display:none}
+    }
+    @media(max-width:560px){
+      .highlights,.food-grid{grid-template-columns:1fr}
+      .hero{padding-top:18px}
+      .brand img{width:48px;height:48px}
+      .hero h1{font-size:3.2rem}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <nav>
+      <a class="brand" href="#home">
+        <img src="assets/logo.png" alt="Samy's Halal Grill logo">
+        <span>Samy's Halal Grill</span>
+      </a>
+      <div class="links">
+        <a href="#menu">Menu</a>
+        <a href="#favorites">Favorites</a>
+		<a href="#offers">Offers</a>
+        <a href="#contact">Contact</a>
+        <a class="call" href="tel:+13474220984">Call 347-422-0984</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <div class="kicker">Fresh • Tasty • Halal</div>
+        <h1>Samy's <span>Halal Grill</span></h1>
+        <p>Fresh Mediterranean and Middle Eastern favorites in Brooklyn — grilled dishes, falafel, platters, shawarma, pizza, burgers, seafood and more.</p>
+        <div class="actions">
+          <a class="btn primary" href="#menu">View Menu</a>
+          <a class="btn secondary" href="tel:+13474220984">Order by Phone</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/banner.png" alt="Samy's Halal Grill featured dishes">
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-title">
+        <h2>Why people choose Samy's Hall Grill</h2>
+        <p>Simple, fresh and satisfying food with a wide variety for dine-in, takeout and catering.</p>
+      </div>
+      <div class="highlights">
+        <div class="card"><h3>100% Halal</h3><p>Halal-focused menu with grilled meats, platters and classic favorites.</p></div>
+        <div class="card"><h3>Fresh Ingredients</h3><p>Bright salads, vegetables, mezze, rice, sauces and freshly prepared dishes.</p></div>
+        <div class="card"><h3>Grilled Fresh</h3><p>Kabab, kofta, steaks, mixed grill and shawarma prepared for bold flavor.</p></div>
+        <div class="card"><h3>Open Late</h3><p>Open every day from 10 AM to 3 AM.</p></div>
+      </div>
+    </div>
+  </section>
+  
+    <section id="offers" class="Offers">
+    <div class="container">
+      <div class="section-title">
+        <h2>Samy's Halal Grill Hot Offers</h2>
+      </div>
+      <div class="offers">
+        <div class="card">
+          <h3>Coffee</h3>
+          <p>We Have Free Caffee For Everyone</p>
+        </div>
+        <div class="card">
+          <h3>Students Discount</h3>
+		  <p>We Have Discount for Students 20% Off</p>
+
+        </div>
+        <div class="card">
+          <h3>1 Free</h3>
+         <p>If You Buy 4 Itemes Get 1 Free</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="menu" class="menu-preview">
+    <div class="container menu-wrap">
+      <div>
+        <div class="kicker" style="color:#f2c66d">Our Menu</div>
+        <h2>Something for everyone</h2>
+        <p>Appetizers, vegetarian platters, sandwiches, burgers, fries, seafood, shawarma, kabab, steaks, mixed grill, pizza, salads and desserts.</p>
+        <div class="actions">
+          <a class="btn secondary" href="assets/Menu_all.png" target="_blank">Open Full Menu</a>
+          <a class="btn" style="border-color:#fff;color:#fff" href="tel:+13474220984">Call to Order</a>
+        </div>
+      </div>
+      <div class="menu-image">
+        <img src="assets/Menu_all.png" alt="Samy's Halal Grill full menu">
+      </div>
+    </div>
+  </section>
+
+  <section id="favorites">
+    <div class="container">
+      <div class="section-title">
+        <h2>Featured favorites</h2>
+        <p>A few dishes customers can discover across the menu.</p>
+      </div>
+      <div class="food-grid">
+        <div class="dish"><img src="assets/falafel.png" alt="Falafel"><div><strong>Falafel</strong><span>Crispy & Flavorful.</span></div></div>
+        <div class="dish"><img src="assets/fuol.png" alt="Fuol Medames"><div><strong>Fuol Medames</strong><span>traditional & Hearty.</span></div></div>
+        <div class="dish"><img src="assets/vegetarian.png" alt="Vegetarian Platter"><div><strong>Vegetarian Platter</strong><span>Fresh & Healthy.</span></div></div>
+        <div class="dish"><img src="assets/maza.png" alt="Maza Platter"><div><strong>Maza Platter</strong><span>A Perfect Start.</span></div></div>
+        <div class="dish"><img src="assets/mix.png" alt="Mix Grill"><div><strong>Mix Grill</strong><span>The Perfect Combo.</span></div></div>
+        <div class="dish"><img src="assets/okra.png" alt="Okra"><div><strong>Okra</strong><span>Cooked To Perfection.</span></div></div>
+        <div class="dish"><img src="assets/kabab.png" alt="Kabab"><div><strong>Kabab</strong><span>Grilled To Perfection.</span></div></div>
+        <div class="dish"><img src="assets/steak.png" alt="Steaks"><div><strong>Steaks</strong><span>Tender & Juicy.</span></div></div>
+        <div class="dish"><img src="assets/pizza.png" alt="Pizza"><div><strong>Pizza</strong><span>Hot, cheesy and made for sharing.</span></div></div>
+        <div class="dish"><img src="assets/Burger.png" alt="Smash burger"><div><strong>Smash Burger</strong><span>Juicy, satisfying and served fresh.</span></div></div>
+        <div class="dish"><img src="assets/kebda.png" alt="Kebda beef liver"><div><strong>Kebda</strong><span>Beef liver with bold seasoning.</span></div></div>
+        <div class="dish"><img src="assets/Sgoak.png" alt="Beef sausage"><div><strong>Sgoak</strong><span>Beef sausage with peppers and spices.</span></div></div>
+        <div class="dish"><img src="assets/Tacos.png" alt="Tacos"><div><strong>Tacos</strong><span>Colorful, fresh and full of flavor.</span></div></div>
+        <div class="dish"><img src="assets/Salad.png" alt="Salad"><div><strong>Salad</strong><span>Crisp vegetables and Mediterranean flavors.</span></div></div>
+        <div class="dish"><img src="assets/Salmon.png" alt="Salmon with rice"><div><strong>Salmon with Rice</strong><span>Grilled salmon served with seasoned rice.</span></div></div>
+        <div class="dish"><img src="assets/Basbosa.png" alt="Basbosa"><div><strong>Basbosa</strong><span>Sweet, traditional dessert.</span></div></div>
+      </div>
+    </div>
+  </section>
+  
+
+  <section id="contact" class="info">
+    <div class="container">
+      <div class="section-title">
+        <h2>Visit Samy's Halal Grill</h2>
+        <p>Brooklyn food, late-night hours and easy ordering by phone.</p>
+      </div>
+      <div class="info-grid">
+        <div class="info-card">
+          <h3>Address</h3>
+          <p>407 Myrtle Ave<br>Brooklyn, NY 11205<br>United States</p>
+          <a class="btn primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=407+Myrtle+Ave+Brooklyn+NY+11205">Get Directions</a>
+        </div>
+        <div class="info-card">
+          <h3>Phone</h3>
+          <p><strong style="font-size:1.3rem">347-422-0984</strong></p>
+          <a class="btn primary" href="tel:+13474220984">Call Restaurant</a>
+        </div>
+        <div class="info-card">
+          <h3>Hours</h3>
+          <p><strong>Open every day</strong><br>10 AM – 3 AM</p>
+          <p class="small">Dine in • Takeout • Catering</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-grid">
+    <div><strong>Samy's Halal Grill</strong><div class="small">Fresh • Tasty • Halal</div></div>
+    <div class="small">407 Myrtle Ave, Brooklyn, NY 11205 · 347-422-0984</div>
+  </div>
+</footer>
+</body>
+</html>
