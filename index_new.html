@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Samy's Halal Grill | Brooklyn, NY</title>
+<meta name="description" content="Samy's Halal Grill - fresh, tasty, halal Mediterranean, Middle Eastern and Halal Mexican food in Brooklyn, New York.">
+<style>
+:root{--green:#0a4729;--green2:#052f1c;--red:#9b2020;--gold:#c99431;--cream:#fff5e5;--paper:#fffaf1;--ink:#261d17;--muted:#6c6259}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--paper)}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}
+.container{width:min(1200px,92vw);margin:auto}
+header{position:sticky;top:0;z-index:50;background:rgba(255,250,241,.97);border-bottom:1px solid #eadfce;backdrop-filter:blur(8px)}
+nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;font-weight:900;color:var(--green)}.brand img{height:64px;width:auto;max-width:150px;object-fit:contain;border-radius:8px}
+.links{display:flex;align-items:center;gap:20px;font-weight:800}.call{background:var(--red);color:white;padding:11px 16px;border-radius:999px}
+.hero{background:linear-gradient(135deg,#fff9ec,#f7e7c8);padding:54px 0}.hero-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:34px;align-items:center}
+.kicker{color:var(--gold);font-weight:900;letter-spacing:.14em;text-transform:uppercase}h1{font-size:clamp(3.2rem,7vw,6.5rem);line-height:.88;color:var(--green);margin:12px 0 20px}h1 span{display:block;color:var(--red);font-size:.45em;letter-spacing:.06em;margin-top:14px}
+.hero p{font-size:1.15rem;line-height:1.7;color:var(--muted)}.hero-art{border-radius:24px;overflow:hidden;border:6px solid white;box-shadow:0 24px 60px #5c422a29}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.btn{display:inline-block;padding:13px 18px;border-radius:12px;font-weight:900;border:2px solid var(--green)}.primary{background:var(--green);color:white}.secondary{background:white;color:var(--green)}
+section{padding:72px 0}.title{text-align:center;margin-bottom:34px}.title h2{font-size:clamp(2rem,4vw,3.4rem);color:var(--green);margin:0}.title p{color:var(--muted);max-width:760px;margin:8px auto}
+.offer-strip{background:var(--green);color:white;padding:22px 0}.offers{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.offer{background:white;color:var(--ink);padding:18px;border-radius:16px;border:3px solid var(--gold);text-align:center}.offer b{display:block;color:var(--red);font-size:1.25rem}
+.dishes{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.dish{background:white;border:1px solid #e7dbc8;border-radius:18px;overflow:hidden;box-shadow:0 12px 28px #4b372018}.dish img{width:100%;height:190px;object-fit:cover}.dish div{padding:14px}.dish b{display:block;color:var(--green);font-size:1.08rem}.dish span{color:var(--muted);font-size:.92rem}
+.menu-section{background:#f9ecd4}.menu-tools{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-bottom:26px}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
+.menu-card{background:white;border-radius:18px;padding:20px;border:1px solid #e3d4bd;box-shadow:0 10px 24px #5b402214}.menu-card h3{margin:0 0 12px;color:white;background:var(--green);padding:11px 14px;border-radius:10px;font-size:1.15rem}.featured-card h3{background:var(--red)}
+.price-head,.menu-row{display:grid;grid-template-columns:1fr 64px 64px;gap:8px;align-items:center}.price-head{font-size:.72rem;font-weight:900;color:var(--red);padding:4px 0 7px;border-bottom:1px solid #decfb8}.menu-row{font-size:.91rem;padding:7px 0;border-bottom:1px dotted #c6b9a6}.menu-row span:nth-child(2),.menu-row span:nth-child(3){text-align:right;font-weight:800}.fries-head,.fries-row{grid-template-columns:1fr 110px 110px}
+.pizza-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center}.pizza-grid div{background:var(--cream);border:1px solid #e3d4bd;border-radius:12px;padding:12px}.pizza-grid b{font-size:1.5rem;color:var(--green);display:block}.pizza-grid small{color:var(--muted)}.note{background:#fff3cf;border-left:4px solid var(--gold);padding:10px}.compact{line-height:1.7;color:var(--muted);font-size:.92rem}
+.menu-pages{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}.menu-pages img{border-radius:16px;border:5px solid white;box-shadow:0 14px 32px #51391d24}
+.info{background:var(--cream)}.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.info-card{background:white;border-radius:18px;padding:26px;border-top:5px solid var(--gold)}.info-card h3{color:var(--green);margin-top:0}
+footer{background:var(--green2);color:white;padding:34px 0}.foot{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.small{color:#c8d8ce}
+@media(max-width:1000px){.hero-grid{grid-template-columns:1fr}.menu-grid{grid-template-columns:repeat(2,1fr)}.dishes{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:760px){.links{display:none}.offers,.info-grid,.menu-pages{grid-template-columns:1fr}.menu-grid{grid-template-columns:1fr}.dishes{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.dishes{grid-template-columns:1fr}.brand img{height:54px}.hero{padding-top:28px}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav>
+<a class="brand" href="#home"><img src="assets/logo.jpg" alt="Samy's Halal Grill logo"><span>Samy's Halal Grill</span></a>
+<div class="links"><a href="#dishes">Dishes</a><a href="#menu">Full Menu</a><a href="#offers">Offers</a><a href="#contact">Contact</a><a class="call" href="tel:+13474220984">347-422-0984</a></div>
+</nav></div></header>
+
+<main id="home">
+<section class="hero"><div class="container hero-grid">
+<div><div class="kicker">Fresh • Tasty • Halal</div><h1>Samy's <span>HALAL GRILL</span></h1>
+<p>Fresh Mediterranean, Middle Eastern and Halal Mexican favorites in Brooklyn. Dine in, takeout and catering - open every day until 3 AM.</p>
+<div class="actions"><a class="btn primary" href="#menu">See Full Written Menu</a><a class="btn secondary" href="Samys_Halal_Grill_Full_Menu.pdf" target="_blank">Download Menu PDF</a></div></div>
+<div class="hero-art"><img src="assets/poster-2.png" alt="Samy's Halal Grill featured food"></div>
+</div></section>
+
+<section id="offers" class="offer-strip"><div class="container"><div class="offers">
+<div class="offer"><b>FREE COFFEE</b>We have free coffee for everyone.</div>
+<div class="offer"><b>20% OFF FOR STUDENTS</b>Student discount highlighted on our menu.</div>
+<div class="offer"><b>BUY 4, GET 1 FREE</b>Buy 4 items and get 1 free.</div>
+</div></div></section>
+
+<section id="dishes"><div class="container"><div class="title"><h2>Popular Dishes</h2><p>Photos from our restaurant posters, with the dish names clearly shown.</p></div>
+<div class="dishes"><div class="dish"><img src="assets/falafel.jpg" alt="Falafel"><div><b>Falafel</b><span>Crispy & flavorful</span></div></div><div class="dish"><img src="assets/foul-medames.jpg" alt="Foul Medames"><div><b>Foul Medames</b><span>Traditional & hearty</span></div></div><div class="dish"><img src="assets/vegetarian-platter.jpg" alt="Vegetarian Platter"><div><b>Vegetarian Platter</b><span>Fresh & healthy</span></div></div><div class="dish"><img src="assets/maza-platter.jpg" alt="Maza Platter"><div><b>Maza Platter</b><span>A perfect start</span></div></div><div class="dish"><img src="assets/pizza.jpg" alt="Pizza"><div><b>Pizza</b><span>Hot & delicious</span></div></div><div class="dish"><img src="assets/smash-burger.jpg" alt="Smash Cheeseburger"><div><b>Smash Cheeseburger</b><span>Served with fries</span></div></div><div class="dish"><img src="assets/kebda.jpg" alt="Kebda"><div><b>Kebda</b><span>Beef liver</span></div></div><div class="dish"><img src="assets/sgoak.jpg" alt="Sgoak"><div><b>Sgoak</b><span>Beef sausage</span></div></div><div class="dish"><img src="assets/tacos.jpg" alt="Tacos"><div><b>Tacos</b><span>Halal Mexican favorites</span></div></div><div class="dish"><img src="assets/salad.jpg" alt="Salad"><div><b>Salad</b><span>Fresh & crisp</span></div></div><div class="dish"><img src="assets/salmon.jpg" alt="Salmon with Rice"><div><b>Salmon with Rice</b><span>Grilled seafood favorite</span></div></div><div class="dish"><img src="assets/basbosa.jpg" alt="Basbosa"><div><b>Basbosa</b><span>Sweet & traditional</span></div></div></div></div></section>
+
+<section id="menu" class="menu-section"><div class="container"><div class="title"><h2>Complete Written Menu</h2><p>Cash and card prices are written directly on the website. The original two menu pages are also included below.</p></div>
+<div class="menu-tools"><a class="btn primary" href="Samys_Halal_Grill_Full_Menu.pdf" target="_blank">Open Full 2-Page Menu PDF</a><a class="btn secondary" href="assets/menu-page-1.jpg" target="_blank">Menu Page 1</a><a class="btn secondary" href="assets/menu-page-2.jpg" target="_blank">Menu Page 2</a></div>
+<div class="menu-grid"><article class="menu-card"><h3>APPETIZERS</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Hummus</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Baba Ganoush</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Falafel</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Tabbouleh</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Foul Medames</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Rice</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Mozzarella Sticks</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Fried Eggplant</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Sgoak (Beef Sausage)</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Kebda (Beef Liver)</span><span>$10.00</span><span>$10.50</span></div></article>
+<article class="menu-card"><h3>PLATTERS</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Vegetarian Platter - Falafel, Hummus, Baba Ganoush, Cauliflower, Fried Eggplant, Salad</span><span>$22.00</span><span>$23.10</span></div><div class="menu-row"><span>Maza Platter - Hummus, Baba Ganoush, Labneh, Salad</span><span>$15.00</span><span>$15.75</span></div></article>
+<article class="menu-card"><h3>SOUP</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Lentil Soup</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Chicken Soup</span><span>$6.00</span><span>$6.30</span></div></article>
+<article class="menu-card"><h3>SANDWICHES WITH FRIES</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Falafel</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Beef</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Chicken</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Lamb</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Kafta</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Philly Cheese Steak</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Shrimp</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Fish</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Sgoak Sandwich</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Kebda Sandwich</span><span>$10.00</span><span>$10.50</span></div></article>
+<article class="menu-card"><h3>BURGERS WITH FRIES</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Smash Cheeseburger</span><span>$10.00</span><span>$10.50</span></div></article>
+<article class="menu-card"><h3>FRY FOOD</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Fried Calamari</span><span>$9.00</span><span>$9.45</span></div><div class="menu-row"><span>Fried Shrimp</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Chicken Wings</span><span>$12.00</span><span>$12.60</span></div><div class="menu-row"><span>Chicken Tender</span><span>$12.00</span><span>$12.60</span></div><div class="menu-row"><span>Onion Rings</span><span>$10.00</span><span>$10.50</span></div></article>
+<article class="menu-card"><h3>SEAFOOD WITH RICE</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Fillet Fish - Tilapia</span><span>$12.00</span><span>$12.60</span></div><div class="menu-row"><span>Salmon</span><span>$15.00</span><span>$15.75</span></div><div class="menu-row"><span>Shrimp - Grilled</span><span>$12.00</span><span>$12.60</span></div></article>
+<article class="menu-card"><h3>VEGETABLE DISHES</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Mesaka</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Okra - in Tomato Sauce</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Khosa - in Tomato Sauce</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Mix Vegetables</span><span>$6.00</span><span>$6.30</span></div></article>
+<article class="menu-card"><h3>SHAWARMA PLATTERS</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Beef</span><span>$12.00</span><span>$12.60</span></div><div class="menu-row"><span>Chicken</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Lamb</span><span>$12.00</span><span>$12.60</span></div></article>
+<article class="menu-card"><h3>KABAB PLATTERS</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Chicken</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Lamb</span><span>$12.00</span><span>$12.60</span></div><div class="menu-row"><span>Kofta</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Beef</span><span>$12.00</span><span>$12.60</span></div></article>
+<article class="menu-card"><h3>STEAKS & CHOPS</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Lamb Chops</span><span>$25.00</span><span>$26.25</span></div><div class="menu-row"><span>New York Strip Steak</span><span>$25.00</span><span>$26.25</span></div><div class="menu-row"><span>Rib Eye Steak</span><span>$25.00</span><span>$26.25</span></div><div class="menu-row"><span>T-Bone Steak</span><span>$25.00</span><span>$26.25</span></div><div class="menu-row"><span>Half Chicken</span><span>$12.00</span><span>$12.60</span></div></article>
+<article class="menu-card"><h3>MIX GRILL</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Mix Grill</span><span>$27.00</span><span>$28.35</span></div></article>
+<article class="menu-card"><h3>HALAL MEXICAN FOOD</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Tacos (chicken, beef, shrimp or fish) - 3 pcs</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Quesadilla</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Burritos</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Tortillas</span><span>$10.00</span><span>$10.50</span></div><div class="menu-row"><span>Nacho Cheese</span><span>$8.00</span><span>$8.40</span></div></article>
+<article class="menu-card"><h3>SALADS</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Greek Salad</span><span>$9.00</span><span>$9.45</span></div><div class="menu-row"><span>Green Salad</span><span>$9.00</span><span>$9.45</span></div><div class="menu-row"><span>Caesar Salad</span><span>$9.00</span><span>$9.45</span></div><div class="menu-row"><span>Choice Your Own Salad</span><span>$9.00</span><span>$9.45</span></div></article>
+<article class="menu-card"><h3>DESSERT</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Baklava</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Knafeh</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Rice Pudding</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Basbosa</span><span>$6.00</span><span>$6.30</span></div><div class="menu-row"><span>Ice-Cream (Chocolate-Vanilla)</span><span>$6.00</span><span>$6.30</span></div></article>
+<article class="menu-card"><h3>BEVERAGES</h3>
+      <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div><div class="menu-row"><span>Bottle Soda</span><span>$3.00</span><span>$3.15</span></div><div class="menu-row"><span>Can Soda</span><span>$2.00</span><span>$2.10</span></div><div class="menu-row"><span>Snapple</span><span>$3.00</span><span>$3.15</span></div><div class="menu-row"><span>Gatorade</span><span>$3.00</span><span>$3.15</span></div><div class="menu-row"><span>Water (S)</span><span>$2.00</span><span>$2.10</span></div><div class="menu-row"><span>Water (L)</span><span>$3.00</span><span>$3.15</span></div></article>
+<article class="menu-card featured-card">
+<h3>PIZZA</h3>
+<div class="pizza-grid">
+  <div><b>10"</b><small>Cash $8.50 · Card $8.90</small></div>
+  <div><b>16"</b><small>Cash $17.00 · Card $17.90</small></div>
+  <div><b>18"</b><small>Cash $20.00 · Card $21.00</small></div>
+</div>
+<p class="note"><b>Toppings:</b> Small $2 · Medium $3 · Large $4 each</p>
+<p class="compact">Caramelized Red Onion · Black or Green Olives · Grilled Vegetables · Sundried Tomato · Peppers & Onion · Spinach & Garlic · Grilled Chicken · Shawarma · Mushrooms · Merguez · Shrimp · Buffalo Chicken</p>
+</article>
+<article class="menu-card">
+<h3>FRIES</h3>
+<div class="price-head fries-head"><span>ITEM</span><span>S CASH/CARD</span><span>L CASH/CARD</span></div>
+<div class="menu-row fries-row"><span>French Fries</span><span>$3 / $3.15</span><span>$6 / $6.30</span></div>
+<div class="menu-row fries-row"><span>Seasonal Fries</span><span>$3 / $3.15</span><span>$6 / $6.30</span></div>
+<div class="menu-row fries-row"><span>Sweet Potato Fries</span><span>$3 / $3.15</span><span>$6 / $6.30</span></div>
+</article>
+<article class="menu-card">
+<h3>SAUCES</h3>
+<p class="compact">Barbecue · Ketchup · White Sauce · Hot Sauce · Tahini Sauce · Sauce</p>
+</article>
+<article class="menu-card">
+<h3>FRESH JUICE & SMOOTHIES</h3>
+<div class="menu-row"><span>Make Your Own Juice</span><span>$6.00</span><span>$6.30</span></div>
+<p class="compact">Lemonade · Mix Fruit Smoothie · Strawberry · Mango · Orange</p>
+</article>
+</div>
+<div class="menu-pages"><img src="assets/menu-page-1.jpg" alt="Samy's Halal Grill menu page 1"><img src="assets/menu-page-2.jpg" alt="Samy's Halal Grill menu page 2"></div>
+</div></section>
+
+<section id="contact" class="info"><div class="container"><div class="title"><h2>Restaurant Information</h2><p>Everything customers need to visit or contact Samy's Halal Grill.</p></div>
+<div class="info-grid">
+<div class="info-card"><h3>Address</h3><p>407 Myrtle Ave<br>Brooklyn, NY 11205<br>United States</p><a class="btn primary" target="_blank" href="https://www.google.com/maps/search/?api=1&query=407+Myrtle+Ave+Brooklyn+NY+11205">Get Directions</a></div>
+<div class="info-card"><h3>Phone</h3><p style="font-size:1.5rem;color:var(--red);font-weight:900">347-422-0984</p><a class="btn primary" href="tel:+13474220984">Call Restaurant</a></div>
+<div class="info-card"><h3>Hours & Service</h3><p><b>OPEN EVERY DAY</b><br>10 AM - 3 AM</p><p>Dine In • Takeout • Catering</p></div>
+</div></div></section>
+</main>
+
+<footer><div class="container foot"><div><b>Samy's Halal Grill</b><div class="small">Fresh • Tasty • Halal</div></div><div class="small">407 Myrtle Ave, Brooklyn, NY 11205 · 347-422-0984</div></div></footer>
+</body></html>
