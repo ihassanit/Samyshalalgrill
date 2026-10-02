@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Samy's Halal Grill | Brooklyn, NY</title>
+<link rel="icon" type="image/png" href="samy/logo.png">
+<meta name="description" content="Samy's Halal Grill in Brooklyn — fresh halal Mediterranean, Middle Eastern and Mexican favorites, open every day until 3 AM.">
+<style>
+:root{--bg:#11120f;--paper:#fbfaf6;--cream:#f3eee4;--red:#c9191f;--green:#0d7a42;--green-dark:#075b31;--gold:#f0b51b;--ink:#191a18;--muted:#6e6b64;--line:#e5dfd3}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--paper);color:var(--ink)}img{display:block;max-width:100%}a{color:inherit;text-decoration:none}button,input{font:inherit}.container{width:min(1380px,94vw);margin:auto}
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:rgba(10,10,9,.92);backdrop-filter:blur(10px);border-bottom:1px solid #ffffff18}.topnav{height:74px;display:flex;align-items:center;gap:28px}.brand{display:flex;align-items:center;gap:12px;min-width:320px}.brand img{height:60px;width:auto;object-fit:contain}.navlinks{display:flex;align-items:center;justify-content:center;gap:28px;flex:1;color:#fff;font-weight:800}.navlinks a{padding:27px 0 22px;border-bottom:3px solid transparent}.navlinks a:hover,.navlinks a.active{border-color:var(--gold);color:#fff}.address-pill{display:flex;align-items:center;gap:9px;background:var(--red);color:#fff;font-weight:900;padding:12px 17px;border-radius:10px;white-space:nowrap}.search-dot{font-size:1.6rem;color:#fff;margin-left:4px}
+.hero{min-height:570px;padding-top:74px;position:relative;color:#fff;background:linear-gradient(90deg,rgba(7,7,6,.92) 0%,rgba(7,7,6,.75) 28%,rgba(7,7,6,.17) 60%,rgba(7,7,6,.08) 100%),url('samy/new/storefront-wide.jpg') center 48%/cover no-repeat}.hero-inner{min-height:496px;display:flex;align-items:center}.hero-copy{max-width:610px;padding:56px 0 54px}.script{font-family:'Brush Script MT','Segoe Script',cursive;font-size:3rem;color:var(--gold);font-style:italic;line-height:1;margin-bottom:8px}.hero h1{font-family:Georgia,'Times New Roman',serif;font-size:clamp(4.2rem,6.5vw,6.7rem);line-height:.84;margin:0 0 16px;letter-spacing:-.045em}.hero h1 span{display:block}.hero .sub{font-weight:900;letter-spacing:.18em;text-transform:uppercase;font-size:1.16rem;margin-bottom:18px}.hero p{font-size:1.08rem;line-height:1.65;color:#f1ece2;margin:0}.actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border-radius:9px;font-weight:900;border:1.5px solid transparent;transition:.2s}.btn:hover{transform:translateY(-1px)}.primary{background:var(--red);color:#fff}.secondary{background:#fff;color:#171815}.ghost{border-color:var(--gold);color:#fff;background:#1118}.green{background:var(--green);color:#fff}
+.promo-strip{background:#fff;border-bottom:1px solid var(--line)}.promo-grid{display:grid;grid-template-columns:repeat(3,1fr);text-align:center}.promo{padding:13px 14px;font-weight:800;border-right:1px solid var(--line)}.promo:last-child{border-right:none}.promo b{color:var(--red)}
+section{padding:64px 0}.favorites{background:#fffdf8;padding-top:28px}.favorites-head{text-align:center;position:relative;margin-bottom:24px}.favorites-head h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.5rem,4vw,4.2rem);margin:0;line-height:1}.favorites-head h2 span{color:var(--green)}.favorites-head h2:before,.favorites-head h2:after{content:"";display:inline-block;width:42px;height:4px;background:var(--red);vertical-align:middle;margin:0 18px;border-radius:4px}.favorites-head p{margin:6px 0 0;font-weight:700}.favorites-top{display:flex;justify-content:flex-end;margin:-48px 0 16px}.favorites-row{display:grid;grid-template-columns:repeat(8,1fr);gap:10px}.fav-card{text-align:center}.fav-card img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:10px}.fav-card b{display:block;margin-top:8px;font-size:.88rem}.fav-card span{display:block;color:var(--muted);font-size:.78rem;margin-top:3px;line-height:1.25}.benefits{margin-top:24px;padding-top:21px;border-top:1px solid var(--line);display:grid;grid-template-columns:repeat(4,1fr)}.benefit{display:flex;align-items:center;gap:13px;padding:6px 22px;border-right:1px solid var(--line)}.benefit:last-child{border-right:0}.benefit .icon{font-size:2.15rem;color:var(--green)}.benefit b{display:block}.benefit span{color:var(--muted);font-size:.86rem}
+.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:30px}.section-head small{display:block;color:var(--red);font-weight:900;letter-spacing:.15em;text-transform:uppercase;margin-bottom:8px}.section-head h2{font-family:Georgia,'Times New Roman',serif;font-size:clamp(2.4rem,5vw,4.2rem);line-height:.95;margin:0;color:#18251d}.section-head p{max-width:600px;color:var(--muted);line-height:1.65;margin:0}
+.signature-grid{display:grid;grid-template-columns:repeat(12,1fr);grid-auto-rows:240px;gap:16px}.food-card{position:relative;overflow:hidden;border-radius:18px;background:#222}.food-card img{width:100%;height:100%;object-fit:cover;transition:.35s transform}.food-card:hover img{transform:scale(1.035)}.food-card:after{content:"";position:absolute;inset:35% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.88))}.food-card .label{position:absolute;z-index:2;left:18px;right:18px;bottom:16px;color:#fff}.food-card .label b{display:block;font-size:1.23rem}.food-card .label span{font-size:.88rem;color:#e9dfd2}.wide{grid-column:span 6}.third{grid-column:span 4}
+.menu-section{background:#efe8dc}.menu-top{display:flex;gap:12px;justify-content:space-between;align-items:center;flex-wrap:wrap;margin-bottom:24px}.search{flex:1;min-width:240px;max-width:420px;background:#fff;border:1px solid #d8ccb9;border-radius:10px;padding:12px 14px;outline:none}.menu-actions{display:flex;gap:10px;flex-wrap:wrap}.menu-actions .btn{padding:11px 14px}.menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}.menu-card{background:#fff;border-radius:15px;padding:0 18px 18px;border:1px solid #dcd1bf;box-shadow:0 12px 26px #5d493511;overflow:hidden}.menu-card h3{margin:0 -18px 14px;padding:16px 18px;background:#0d6a3c;color:#fff;font-size:1.02rem;letter-spacing:.02em}.menu-card.menu-photo h3{padding-top:122px;background-size:cover;background-position:center;text-shadow:0 2px 14px #000}.featured-card h3{background-color:var(--red)}.price-head,.menu-row{display:grid;grid-template-columns:1fr 70px 70px;gap:8px;align-items:center}.price-head{font-size:.7rem;font-weight:900;color:var(--red);padding:4px 0 8px;border-bottom:1px solid #e6d7c3}.menu-row{font-size:.9rem;padding:7px 0;border-bottom:1px dotted #c9bca9}.menu-row span:nth-child(2),.menu-row span:nth-child(3){text-align:right;font-weight:900}.fries-head,.fries-row{grid-template-columns:1fr 116px 116px}.pizza-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;text-align:center}.pizza-grid div{background:#f8ecd8;border:1px solid #ead9bd;border-radius:12px;padding:12px}.pizza-grid b{display:block;color:var(--green);font-size:1.45rem}.pizza-grid small{color:var(--muted)}.note{background:#fff0ca;border-left:4px solid var(--gold);padding:10px}.compact{line-height:1.7;color:var(--muted);font-size:.92rem}.menu-preview{margin-top:34px;background:#151712;color:#fff;border-radius:20px;padding:22px;display:grid;grid-template-columns:1.25fr .75fr;gap:24px;align-items:center}.menu-preview img{border-radius:14px;width:100%;height:auto;max-height:none;object-fit:unset;background:transparent}.menu-preview h3{font-family:Georgia,serif;font-size:2.3rem;margin:0 0 10px}.menu-preview p{color:#d6cbbb;line-height:1.65}
+.visit{background:#11130f;color:#fff}.visit-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}.visit-panel{background:#1c211a;border:1px solid #ffffff12;border-radius:18px;padding:28px}.visit-panel h3{font-family:Georgia,serif;font-size:2rem;margin:0 0 12px;color:#ffd28b}.visit-panel p{color:#d4cec4;line-height:1.7}.big-phone{font-size:clamp(2rem,5vw,4rem);font-weight:900;color:#fff}footer{background:#090b08;color:#d8d1c7;padding:28px 0}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}.foot b{color:#fff}
+@media(max-width:1180px){.brand{min-width:auto}.address-pill{display:none}.favorites-row{grid-template-columns:repeat(4,1fr)}.menu-grid{grid-template-columns:repeat(2,1fr)}.benefits{grid-template-columns:repeat(2,1fr)}.benefit:nth-child(2){border-right:0}.benefit:nth-child(-n+2){border-bottom:1px solid var(--line)}}
+@media(max-width:800px){header{position:sticky}.topnav{height:66px}.brand img{height:50px}.navlinks{justify-content:flex-end}.navlinks a:not(:nth-child(2)){display:none}.hero{padding-top:0;min-height:560px;background-position:64% center}.hero-inner{min-height:560px}.hero-copy{padding:70px 0}.script{font-size:2.35rem}.hero h1{font-size:4rem}.promo-grid{grid-template-columns:1fr}.promo{border-right:0;border-bottom:1px solid var(--line)}.promo:last-child{border-bottom:0}.favorites-head h2:before,.favorites-head h2:after{display:none}.favorites-top{margin:14px 0}.favorites-row{grid-template-columns:repeat(2,1fr);gap:14px}.benefits{grid-template-columns:1fr}.benefit{border-right:0!important;border-bottom:1px solid var(--line)}.benefit:last-child{border-bottom:0}.section-head{display:block}.section-head p{margin-top:12px}.menu-grid{grid-template-columns:1fr}.signature-grid{grid-template-columns:1fr 1fr;grid-auto-rows:200px}.wide,.third{grid-column:span 1}.food-card:first-child{grid-column:span 2}.visit-grid,.menu-preview{grid-template-columns:1fr}}
+@media(max-width:480px){.container{width:min(94vw,1380px)}.brand img{height:44px}.navlinks{display:none}.search-dot{margin-left:auto}.hero h1{font-size:3.4rem}.hero .sub{font-size:.92rem}.favorites-row{grid-template-columns:1fr 1fr}.signature-grid{grid-template-columns:1fr}.wide,.third,.food-card:first-child{grid-column:span 1}.price-head,.menu-row{grid-template-columns:1fr 60px 60px}.fries-head,.fries-row{grid-template-columns:1fr 98px 98px}}
+</style>
+</head>
+<body>
+<header><div class="container"><nav class="topnav"><a class="brand" href="#home"><img src="samy/logo.png" alt="Samy's Halal Grill logo"></a><div class="navlinks"><a class="active" href="#home">Home</a><a href="#menu">Menu</a><a href="#favorites">Favorites</a><a href="#gallery">Gallery</a><a href="#visit">Contact</a></div><a class="address-pill" target="_blank" href="https://www.google.com/maps/place/Samy%E2%80%99s+Halal+Grill/@40.6933133,-73.969524,17z/data=!4m15!1m8!3m7!1s0x89c25bb8720e8a73:0x1e127435880e82a4!2s407+Myrtle+Ave,+Brooklyn,+NY+11205,+Stati+Uniti!3b1!8m2!3d40.6933133!4d-73.969524!16s%2Fg%2F11b8zcxz48!3m5!1s0x89c25b00446e10fd:0x77476197195d8c19!8m2!3d40.6932643!4d-73.9695371!16s%2Fg%2F11zfj6hzyr?entry=ttu&g_ep=EgoyMDI2MDkyNy4wIKXMDSoASAFQAw%3D%3D">📍 407 Myrtle Ave, Brooklyn</a><span class="search-dot">⌕</span></nav></div></header>
+<main id="home">
+<section class="hero"><div class="container hero-inner"><div class="hero-copy"><div class="script">Welcome to</div><h1><span>Samy’s</span><span>Halal Grill</span></h1><div class="sub">Authentic Middle East Food</div><p>Fresh ingredients. Bold flavors. Halal food for everyone.<br>Dine in | Take out | Catering</p><div class="actions"><a class="btn primary" href="#menu">🍴 View Our Menu</a><a class="btn ghost" target="_blank" href="https://www.google.com/maps/place/Samy%E2%80%99s+Halal+Grill/@40.6933133,-73.969524,17z/data=!4m15!1m8!3m7!1s0x89c25bb8720e8a73:0x1e127435880e82a4!2s407+Myrtle+Ave,+Brooklyn,+NY+11205,+Stati+Uniti!3b1!8m2!3d40.6933133!4d-73.969524!16s%2Fg%2F11b8zcxz48!3m5!1s0x89c25b00446e10fd:0x77476197195d8c19!8m2!3d40.6932643!4d-73.9695371!16s%2Fg%2F11zfj6hzyr?entry=ttu&g_ep=EgoyMDI2MDkyNy4wIKXMDSoASAFQAw%3D%3D">📍 Get Directions</a></div></div></div></section>
+<div class="promo-strip"><div class="container promo-grid"><div class="promo"><b>20% Student Discount</b> · Bring your student ID</div><div class="promo"><b>Buy 4, Get 1 Free</b> · Great for family and friends</div><div class="promo"><b>Free Coffee</b> · For everyone</div></div></div>
+<section id="favorites" class="favorites"><div class="container"><div class="favorites-head"><h2>Customer <span>Favorites</span></h2><p>Our popular dishes, made fresh every day.</p></div><div class="favorites-top"><a class="btn green" href="#menu">View Full Menu →</a></div><div class="favorites-row">
+<div class="fav-card"><img src="samy/new/mix-grill.jpg" alt="Mix Grill"><b>Mix Grill</b><span>Grilled halal favorites</span></div>
+<div class="fav-card"><img src="samy/new/pizza-margherita.jpg" alt="Pizza"><b>Pizza</b><span>Fresh & delicious</span></div>
+<div class="fav-card"><img src="samy/new/strip-steak.jpg" alt="New York Strip Steak"><b>New York Strip Steak</b><span>Juicy & flavorful</span></div>
+<div class="fav-card"><img src="samy/new/tbone-steak.jpg" alt="T-bone Steak"><b>T-Bone Steak</b><span>Premium quality</span></div>
+<div class="fav-card"><img src="samy/new/kebda-liver.jpg" alt="Kebda Beef Liver"><b>Kebda</b><span>Beef liver</span></div>
+<div class="fav-card"><img src="samy/sgoak.png" alt="Sgoak Beef Sausage"><b>Sgoak</b><span>Beef sausage</span></div>
+<div class="fav-card"><img src="samy/new/falafel-sandwich.jpg" alt="Falafel Sandwich"><b>Falafel Sandwich</b><span>Fresh & healthy</span></div>
+<div class="fav-card"><img src="samy/new/greek-salad.jpg" alt="Greek Salad"><b>Greek Salad</b><span>Fresh & tasty</span></div>
+</div><div class="benefits"><div class="benefit"><div class="icon">◯</div><div><b>Fresh Ingredients</b><span>Always fresh, always halal</span></div></div><div class="benefit"><div class="icon">♨</div><div><b>Authentic Recipes</b><span>Traditional Middle East flavors</span></div></div><div class="benefit"><div class="icon">♡</div><div><b>Great Taste</b><span>Loved by our community</span></div></div><div class="benefit"><div class="icon">♟</div><div><b>For Everyone</b><span>Good food brings people together</span></div></div></div></div></section>
+<section id="menu" class="menu-section"><div class="container"><div class="section-head"><div><small>Complete menu</small><h2>Find your next favorite.</h2></div><p>Cash and card prices stay visible. Selected menu categories now include food photography for a more appetizing, modern presentation.</p></div><div class="menu-top"><input id="menuSearch" class="search" type="search" placeholder="Search menu — pizza, shawarma, salmon..." aria-label="Search menu"><div class="menu-actions"><a class="btn primary" href="Menu.pdf" target="_blank">Open Menu PDF</a><a class="btn secondary" href="samy/menu.PNG" target="_blank">Menu Image</a></div></div><div class="menu-grid">
+<article class="menu-card"><h3>APPETIZERS</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Hummus</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Baba Ganoush</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Falafel</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Tabbouleh</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Foul Medames</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Rice</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Fried Eggplant</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Sgoak (Beef Sausage)</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Kebda (Beef Liver)</span><span>$10.00</span><span>$10.50</span></div>
+</article>
+
+<article class="menu-card"><h3>VEGETARIAN PLATTER</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Falafel, Hummus, Baba Ganoush, Cauliflower, Fried Eggplant, Salad</span><span>$22.00</span><span>$23.10</span></div>
+</article>
+
+<article class="menu-card"><h3>MAZZA PLATTER</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Hummus, Baba Ganoush, Labneh, Salad, Falafel</span><span>$15.00</span><span>$15.75</span></div>
+</article>
+
+<article class="menu-card"><h3>SOUP</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Lentil Soup</span><span>$6.00</span><span>$6.50</span></div>
+  <div class="menu-row"><span>Chicken Soup</span><span>$6.00</span><span>$6.50</span></div>
+</article>
+
+<article class="menu-card"><h3>SANDWICHES WITH FRIES</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Falafel</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Beef</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Chicken</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Lamb</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Kafta</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Philly Cheese Steak</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Shrimp</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Fish</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Sgoak Sandwich</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Kebda Sandwich</span><span>$10.00</span><span>$10.50</span></div>
+</article>
+
+<article class="menu-card"><h3>BURGER WITH FRIES</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Smash Cheeseburger</span><span>$10.00</span><span>$10.50</span></div>
+</article>
+
+<article class="menu-card"><h3>FRIED FOOD</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Fried Calamari</span><span>$9.00</span><span>$9.45</span></div>
+  <div class="menu-row"><span>Fried Shrimp</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Chicken Wings 6PCS</span><span>$12.00</span><span>$12.60</span></div>
+  <div class="menu-row"><span>Chicken Tender 4PCS</span><span>$12.00</span><span>$12.60</span></div>
+  <div class="menu-row"><span>Onion Rings</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Mozzarella Sticks 5PCS</span><span>$6.00</span><span>$6.30</span></div>
+</article>
+
+<article class="menu-card"><h3>FRIES</h3>
+  <div class="price-head fries-head"><span>ITEM</span><span>S CASH/CARD</span><span>L CASH/CARD</span></div>
+  <div class="menu-row fries-row"><span>French Fries</span><span>$3.00 / $3.15</span><span>$6.00 / $6.30</span></div>
+  <div class="menu-row fries-row"><span>Seasoned Fries</span><span>$3.00 / $3.15</span><span>$6.00 / $6.30</span></div>
+  <div class="menu-row fries-row"><span>Sweet Potato Fries</span><span>$3.00 / $3.15</span><span>$6.00 / $6.30</span></div>
+</article>
+
+<article class="menu-card"><h3>SEA FOOD</h3>
+  <p class="compact"><b>Served with Rice &amp; Salad or French Fries</b></p>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Fillet Fish - Tilapia</span><span>$12.00</span><span>$12.60</span></div>
+  <div class="menu-row"><span>Salmon</span><span>$15.00</span><span>$15.75</span></div>
+  <div class="menu-row"><span>Shrimp - Grilled</span><span>$12.00</span><span>$12.60</span></div>
+  <div class="menu-row"><span>Branzino Whole Fish</span><span>$19.99</span><span>$20.90</span></div>
+</article>
+
+<article class="menu-card"><h3>VEGETABLE DISHES</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Moussaka</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Okra in Tomato Sauce</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Kousa in Tomato Sauce</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Mixed Vegetables</span><span>$6.00</span><span>$6.30</span></div>
+</article>
+
+<article class="menu-card"><h3>SHAWARMA</h3>
+  <p class="compact"><b>Platter with Salad and Rice or Fries</b></p>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Beef</span><span>$12.00</span><span>$12.60</span></div>
+  <div class="menu-row"><span>Chicken</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Lamb</span><span>$12.00</span><span>$12.60</span></div>
+</article>
+
+<article class="menu-card"><h3>KABAB</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Chicken</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Lamb</span><span>$12.00</span><span>$12.60</span></div>
+  <div class="menu-row"><span>Kofta</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Beef</span><span>$12.00</span><span>$12.60</span></div>
+</article>
+
+<article class="menu-card"><h3>STEAKS &amp; SHOPS</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Lamb Chops</span><span>$25.00</span><span>$26.25</span></div>
+  <div class="menu-row"><span>New York Strip Steak</span><span>$25.00</span><span>$26.25</span></div>
+  <div class="menu-row"><span>Rib Eye Steak</span><span>$25.00</span><span>$26.25</span></div>
+  <div class="menu-row"><span>T-Bone Steak</span><span>$25.00</span><span>$26.25</span></div>
+  <div class="menu-row"><span>Half Chicken</span><span>$12.00</span><span>$12.60</span></div>
+</article>
+
+<article class="menu-card"><h3>MIX GRILL</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Beef, Chicken, Kofta</span><span>$25.00</span><span>$26.25</span></div>
+</article>
+
+<article class="menu-card featured-card"><h3>PIZZA</h3>
+  <p class="compact"><b>Tomato Sauce &amp; Mozzarella Cheese</b></p>
+  <div class="pizza-grid">
+    <div><b>10"</b><small>Cash $7.00 · Card $7.35</small></div>
+    <div><b>16"</b><small>Cash $13.00 · Card $13.65</small></div>
+    <div><b>18"</b><small>Cash $16.00 · Card $16.80</small></div>
+  </div>
+  <p class="note"><b>TOPPINGS: Each topping</b><br>Small (10") $2.00 · Medium (16") $3.15 · Large (18") $4.20</p>
+  <p class="compact">Caramelized Red Onion · Black or Green Olives · Grilled Vegetables · Sundried Tomato · Peppers &amp; Onion · Spinach &amp; Garlic · Grilled Chicken · Shawarma · Mushroom · Merguez · Shrimp · Buffalo Chicken</p>
+</article>
+
+<article class="menu-card"><h3>HALAL MEXICAN FOOD</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Tacos (chicken-beef-shrimp-fish)</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Quesadilla</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Burritos</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Tortillas</span><span>$10.00</span><span>$10.50</span></div>
+  <div class="menu-row"><span>Nacho Cheese</span><span>$8.00</span><span>$8.40</span></div>
+</article>
+
+<article class="menu-card"><h3>SALADS</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Greek Salad</span><span>$9.00</span><span>$9.45</span></div>
+  <div class="menu-row"><span>Green Salad</span><span>$9.00</span><span>$9.45</span></div>
+  <div class="menu-row"><span>Caesar Salad</span><span>$9.00</span><span>$9.45</span></div>
+  <div class="menu-row"><span>Tabbouleh Salad</span><span>$6.99</span><span>$7.34</span></div>
+  <div class="menu-row"><span>Choose Your Own Salad</span><span>$9.00</span><span>$9.45</span></div>
+</article>
+
+<article class="menu-card"><h3>SAUCES</h3>
+  <p class="compact">Barbecue · Ketchup · White Sauce · Hot Sauce · Tahini Sauce · Sauce</p>
+</article>
+
+<article class="menu-card"><h3>DESSERTS</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Baklava</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Knafeh</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Rice Pudding</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Basbosa</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Ice-Cream (Chocolate - Vanilla)</span><span>$6.00</span><span>$6.30</span></div>
+</article>
+
+<article class="menu-card"><h3>BEVERAGES</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Bottle Soda</span><span>$3.00</span><span>$3.15</span></div>
+  <div class="menu-row"><span>Can Soda</span><span>$2.00</span><span>$2.10</span></div>
+  <div class="menu-row"><span>Snapple</span><span>$3.00</span><span>$3.15</span></div>
+  <div class="menu-row"><span>Gatorade</span><span>$3.00</span><span>$3.15</span></div>
+  <div class="menu-row"><span>Water (S)</span><span>$2.00</span><span>$2.10</span></div>
+  <div class="menu-row"><span>Water (L)</span><span>$3.00</span><span>$3.15</span></div>
+</article>
+
+<article class="menu-card"><h3>FRESH JUICE &amp; SMOOTHIES</h3>
+  <div class="price-head"><span>ITEM</span><span>CASH</span><span>CARD</span></div>
+  <div class="menu-row"><span>Make Your Own Juice</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Lemonade</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Mixed Fruit Smoothie</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Strawberry</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Mango</span><span>$6.00</span><span>$6.30</span></div>
+  <div class="menu-row"><span>Orange</span><span>$6.00</span><span>$6.30</span></div>
+</article>
+</div><div class="menu-preview"><img src="samy/Menu_all.png" alt="Samy's Halal Grill full menu"><div><small style="color:#d8a44e;font-weight:900;letter-spacing:.14em;text-transform:uppercase">Print menu</small><h3>Prefer the original menu layout?</h3><p>Open the restaurant's full menu image or PDF anytime. The website version is designed to be faster to browse on phones while keeping the same food selection and prices.</p><div class="actions"><a class="btn primary" href="Menu.pdf" target="_blank">View PDF</a><a class="btn secondary" href="samy/Menu_all.png" target="_blank">View Full Image</a></div></div></div></div></section>
+<section id="gallery"><div class="container"><div class="section-head"><div><small>Our restaurant & food</small><h2>See Samy’s before you visit.</h2></div><p>Real photos of our Brooklyn storefront and dishes from the menu.</p></div><div class="signature-grid"><div class="food-card wide"><img src="samy/new/storefront-front.jpg" alt="Samy's Halal Grill storefront"><div class="label"><b>Samy’s Halal Grill</b><span>407 Myrtle Ave, Brooklyn</span></div></div><div class="food-card third"><img src="samy/new/kebda-liver.jpg" alt="Kebda beef liver"><div class="label"><b>Kebda</b><span>Beef liver with onions and peppers</span></div></div><div class="food-card third"><img src="samy/new/falafel-sandwich.jpg" alt="Falafel sandwich"><div class="label"><b>Falafel Sandwich</b><span>Fresh falafel with salad in pita</span></div></div><div class="food-card third"><img src="samy/new/strip-steak.jpg" alt="New York strip steak"><div class="label"><b>New York Strip</b><span>Grilled steak</span></div></div><div class="food-card third"><img src="samy/new/tbone-steak.jpg" alt="T-bone steak"><div class="label"><b>T-Bone Steak</b><span>Grilled and full of flavor</span></div></div><div class="food-card third"><img src="samy/new/greek-salad.jpg" alt="Greek salad"><div class="label"><b>Greek Salad</b><span>Fresh vegetables and feta</span></div></div><div class="food-card third"><img src="samy/new/fries.jpg" alt="French fries"><div class="label"><b>French Fries</b><span>Crispy golden fries</span></div></div></div></div></section>
+<section id="visit" class="visit"><div class="container"><div class="section-head"><div><small style="color:#d9a64f">Visit Samy's</small><h2 style="color:#fff">Brooklyn flavor, late into the night.</h2></div><p style="color:#c7c0b5">Dine in, grab takeout, or ask about catering.</p></div><div class="visit-grid"><div class="visit-panel"><h3>407 Myrtle Ave</h3><p>Brooklyn, NY 11205<br>Open every day, 10 AM – 3 AM</p><div class="actions"><a class="btn primary" target="_blank" href="https://www.google.com/maps/place/Samy%E2%80%99s+Halal+Grill/@40.6933133,-73.969524,17z/data=!4m15!1m8!3m7!1s0x89c25bb8720e8a73:0x1e127435880e82a4!2s407+Myrtle+Ave,+Brooklyn,+NY+11205,+Stati+Uniti!3b1!8m2!3d40.6933133!4d-73.969524!16s%2Fg%2F11b8zcxz48!3m5!1s0x89c25b00446e10fd:0x77476197195d8c19!8m2!3d40.6932643!4d-73.9695371!16s%2Fg%2F11zfj6hzyr?entry=ttu&g_ep=EgoyMDI2MDkyNy4wIKXMDSoASAFQAw%3D%3D">Get Directions</a></div></div><div class="visit-panel"><h3>Order by phone</h3><div class="big-phone">347-422-0984</div><p>Dine In • Takeout • Catering</p><a class="btn secondary" href="tel:+13474220984">Call Restaurant</a></div></div></div></section>
+</main>
+<footer><div class="container foot"><div><b>Samy's Halal Grill</b><div>Fresh • Tasty • Halal</div></div><div>407 Myrtle Ave, Brooklyn, NY 11205 · 347-422-0984</div></div></footer>
+<script>
+const photoMap={
+'APPETIZERS':'samy/new/falafel-pita.jpg','VEGETARIAN PLATTER':'samy/vegetarian.png','MAZZA PLATTER':'samy/vegetarian.png','SANDWICHES WITH FRIES':'samy/new/falafel-sandwich.jpg','BURGER WITH FRIES':'samy/burger.png','FRIED FOOD':'samy/new/fries.jpg','SEA FOOD':'samy/salmon.png','VEGETABLE DISHES':'samy/okra.png','SHAWARMA':'samy/new/steak.jpg','KABAB':'samy/new/beef-kabab.jpg','STEAKS & SHOPS':'samy/new/strip-steak.jpg','MIX GRILL':'samy/new/mix-grill.jpg','HALAL MEXICAN FOOD':'samy/tacos.png','SALADS':'samy/new/greek-salad.jpg','DESSERTS':'samy/basbosa.png','PIZZA':'samy/new/pizza-peppers.jpg','FRIES':'samy/new/fries.jpg'};
+document.querySelectorAll('.menu-card').forEach(card=>{const h=card.querySelector('h3');if(!h)return;const key=h.textContent.trim().toUpperCase();const img=photoMap[key];if(img){card.classList.add('menu-photo');h.style.backgroundImage=`linear-gradient(transparent,rgba(0,0,0,.78)), url('${img}')`;}});
+const search=document.getElementById('menuSearch');search.addEventListener('input',()=>{const q=search.value.trim().toLowerCase();document.querySelectorAll('.menu-card').forEach(card=>{card.style.display=!q||card.textContent.toLowerCase().includes(q)?'block':'none';});});
+</script>
+</body></html>
